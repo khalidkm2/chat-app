@@ -1,0 +1,31 @@
+{
+  "name": "chat-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "NODE_ENV=development nodemon src/server.ts",
+    "build": "rm -rf build/ && tsc -p .",
+    "start": "NODE_ENV=production nodemon build/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/amqplib": "^0.10.7",
+    "@types/express": "^5.0.3",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/uuid": "^10.0.0",
+    "amqplib": "^0.10.9",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.18.2",
+    "nodemon": "^3.1.10",
+    "socket.io": "^4.8.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2",
+    "uuid": "^13.0.0"
+  }
+}
