@@ -53,7 +53,7 @@ class RabbitMQService {
                         );
                     }
                 }
-
+                console.log("noti mq")
                 this.channel.ack(msg); // Acknowledge the message after processing
             }
         });
